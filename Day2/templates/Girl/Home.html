@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    table{
+      width: 100%;
+      color: rgb(255, 1, 125);
+      border:solid 10px rgb(255, 0, 0);
+      border-radius: 5px;
+      border-collapse: collapse;
+    }
+    th,td{
+      border:solid 10px rgb(255, 0, 0);
+      text-align: center;
+      font-size: 30px;
+      font-style: italic;
+      border-radius: 5px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <h1>Hello WelCome to Girl Home Page</h1>
+    <table>
+      <tr>
+        <th>Roll</th>
+        <th>Name</th>
+        <th>Branch</th>
+      </tr>
+      {% for data in Key %}
+      <tr>
+        <td>{{data.roll}}</td>
+        <td>{{data.name}}</td>
+        <td>{{data.branch}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
